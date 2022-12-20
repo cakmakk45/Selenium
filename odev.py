@@ -8,6 +8,7 @@ driver.get("https://www.facebook.com/login/")
 driver.maximize_window()
 sleep(10)
 
+
 username = driver.find_element(By.NAME, "email")
 password = driver.find_element(By.NAME, "pass")
 
@@ -21,6 +22,7 @@ login.click()
 sleep(10)
 
 title = driver.title
+print(driver.title)
 if  title=="Log in":
     print("Giriş başarılı 😍")
 else:
